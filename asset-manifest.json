@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ysm-concept/static/css/main.ba7cd578.css",
-    "main.js": "/ysm-concept/static/js/main.ba9b1fd6.js",
+    "main.js": "/ysm-concept/static/js/main.47bd29ff.js",
     "index.html": "/ysm-concept/index.html",
     "main.ba7cd578.css.map": "/ysm-concept/static/css/main.ba7cd578.css.map",
-    "main.ba9b1fd6.js.map": "/ysm-concept/static/js/main.ba9b1fd6.js.map"
+    "main.47bd29ff.js.map": "/ysm-concept/static/js/main.47bd29ff.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7cd578.css",
-    "static/js/main.ba9b1fd6.js"
+    "static/js/main.47bd29ff.js"
   ]
 }
