@@ -7,7 +7,7 @@ export const Overview: React.FC = () => {
       <div className={styles["overview__video"]}>
         {/* <button className={styles["overview__pause"]}>Pause</button> */}
 
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline>
           <source type="video/webm" src="./videos/video.webm" />
           <source type="video/mp4" src="./videos/video.mp4" />
         </video>
