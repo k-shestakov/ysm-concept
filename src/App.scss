@@ -1,0 +1,122 @@
+@use "/src/styles/fonts";
+@use "/src/styles/utils";
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+@use "/src/styles/blocks/page";
+@use "/src/styles/blocks/menu";
+
+html {
+  scroll-behavior: smooth;
+  font-size: 40px; // default value for rem
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 1rem;
+  color: vars.$main-color;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.scroll-stop {
+  overflow: hidden;
+}
+
+.overlay {
+  overflow: auto;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff52;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.general-popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close {
+  transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(50px);
+}
+
+.title {
+  @include mixins.title;
+}
+
+.button {
+  @include mixins.button;
+}
+
+.button-send {
+  @include mixins.button-send;
+}
+
+.swiper {
+  height: 85vh;
+  display: flex;
+  overflow: hidden;
+
+  @media (max-width: 1250px) {
+    height: 60vh;
+  }
+
+  @include mixins.on-mobile {
+  }
+}
+
+.swiper-wrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff22;
+  }
+}
+
+.hero-slide {
+  flex: 0 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

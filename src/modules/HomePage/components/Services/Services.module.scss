@@ -1,0 +1,9 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.services {
+  &__title {
+    background-color: vars.$main-color;
+    color: vars.$minor-color;
+  }
+}

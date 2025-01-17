@@ -1,0 +1,41 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all 0.6s ease;
+  width: 80%;
+
+  @include mixins.on-mobile {
+    top: 40%;
+    width: 90%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    right: 0;
+    background-color: vars.$main-color;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mixins.on-mobile {
+      padding: 8px;
+      width: 32px;
+      height: 32px;
+
+      & img {
+        max-width: 10px;
+      }
+    }
+  }
+}

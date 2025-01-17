@@ -1,0 +1,73 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.send-form {
+  &__form {
+  }
+
+  &__input {
+    display: block;
+    border-bottom: #d7d7d7 1px solid;
+    width: 100%;
+    height: 110px;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 20px 45px;
+    transition: border-bottom 0.5s ease;
+
+    &:focus {
+      border-bottom: vars.$main-color 1px solid;
+    }
+
+    @media (max-width: 1600px) {
+      font-size: 0.9rem;
+      padding: 20px 45px;
+    }
+
+    @media (max-width: 1250px) {
+      height: 90px;
+      font-size: 0.8rem;
+      padding: 10px 45px;
+    }
+
+    @include mixins.on-tablet {
+      height: 80px;
+      font-size: 0.7rem;
+      padding: 14px 25px;
+    }
+
+    @include mixins.on-mobile {
+      height: 70px;
+      font-size: 0.6rem;
+      padding: 10px 15px;
+    }
+
+    &::placeholder {
+      color: #d7d7d7;
+    }
+
+    &--message {
+      resize: none;
+      height: 300px;
+
+      @media (max-width: 1600px) {
+        height: 220px;
+      }
+
+      @media (max-width: 1250px) {
+        height: 200px;
+      }
+
+      @include mixins.on-tablet {
+        height: 180px;
+      }
+
+      @include mixins.on-mobile {
+        height: 100px;
+      }
+    }
+  }
+
+  &__button {
+  }
+}

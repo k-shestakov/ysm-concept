@@ -1,0 +1,134 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.menu {
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  &--open &__body {
+    transform: translate(0);
+  }
+
+  @media (max-width: 1600px) {
+    height: 80px;
+  }
+
+  @include mixins.on-tablet {
+    font-size: 0.45rem;
+    height: 60px;
+  }
+
+  &__body {
+    @media (max-width: 840px) {
+      position: relative;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: inherit;
+      z-index: 5;
+      padding: 10px 25px;
+      border-left: solid #eaeaea 1px;
+      height: 100%;
+      background-color: vars.$minor-color;
+      transform: translateX(150%);
+      transition: transform 0.5s ease;
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @media (max-width: 840px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transform: translate(-50%);
+      top: 50%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: vars.$main-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap;
+    margin-right: 50px;
+
+    @media (max-width: 1600px) {
+      margin-right: 30px;
+      gap: 40px;
+    }
+
+    @include mixins.on-tablet {
+      gap: 30px;
+    }
+
+    @media (max-width: 840px) {
+      margin-right: 0;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    padding: 20px 0;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #a7a7a7;
+    }
+
+    @include mixins.on-tablet {
+      padding: 10px 0;
+    }
+  }
+
+  &__cost {
+    transition: background-color 0.3s ease;
+
+    & span:nth-child(2) {
+      display: none;
+    }
+
+    @media (max-width: 500px) {
+      & span:nth-child(2) {
+        display: inline-block;
+      }
+
+      & span:nth-child(1) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: #4f4f4f;
+    }
+
+    &:active {
+      background-color: vars.$main-color;
+    }
+  }
+}
+
+.icon-menu {
+  display: none;
+
+  @media (max-width: 840px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    position: relative;
+  }
+}

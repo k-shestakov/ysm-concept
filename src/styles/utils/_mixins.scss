@@ -1,0 +1,99 @@
+@use "../../styles/utils/vars" as vars;
+
+@mixin on-mobile {
+  @media (max-width: vars.$modile) {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @media (max-width: vars.$tablet) {
+    @content;
+  }
+}
+
+@mixin on-laptop {
+  @media (max-width: vars.$laptop) {
+    @content;
+  }
+}
+
+@mixin button {
+  font-size: 0.5rem;
+  font-weight: 200;
+  height: 100%;
+  padding: 5px 52px;
+  background-color: vars.$main-color;
+  color: vars.$minor-color;
+
+  @media (max-width: 1600px) {
+    padding: 5px 42px;
+  }
+
+  @include on-tablet {
+    padding: 5px 38px;
+    font-size: 0.45rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 5px 30px;
+  }
+}
+
+@mixin title {
+  padding: 24px 45px;
+  font-size: 1.2rem;
+  font-weight: 200;
+
+  @media (max-width: 1600px) {
+    padding: 20px 45px;
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 1250px) {
+    padding: 18px 45px;
+    font-size: 0.95rem;
+  }
+
+  @include on-tablet {
+    padding: 16px 25px;
+  }
+
+  @media (max-width: 864px) {
+    font-size: 0.8rem;
+  }
+
+  @include on-mobile {
+    font-size: 0.7rem;
+    padding: 12px 15px;
+  }
+}
+
+@mixin button-send {
+  width: 100%;
+  background-color: vars.$main-color;
+  height: 110px;
+  font-size: 0.95rem;
+  color: vars.$minor-color;
+  font-weight: 200;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #484848;
+  }
+
+  @media (max-width: 1600px) {
+    height: 95px;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 1250px) {
+    height: 80px;
+    font-size: 0.7rem;
+  }
+
+  @include on-mobile {
+    height: 50px;
+    font-size: 0.45rem;
+  }
+}

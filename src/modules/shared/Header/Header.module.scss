@@ -1,0 +1,53 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: vars.$minor-color;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-left: 45px;
+  align-items: center;
+  gap: 20px;
+  font-weight: 300;
+  transition: transform 0.5s ease;
+
+  &--absolute {
+    transform: translateY(-100%);
+  }
+
+  @media (max-width: 1600px) {
+    min-height: 80px;
+  }
+
+  @include mixins.on-tablet {
+    padding-left: 25px;
+    min-height: 60px;
+  }
+
+  @include mixins.on-mobile {
+    padding-left: 15px;
+  }
+
+  &__logo {
+    & img {
+      max-width: 151px;
+
+      @media (max-width: 1600px) {
+        max-width: 131px;
+      }
+
+      @include mixins.on-tablet {
+        max-width: 100px;
+      }
+    }
+  }
+
+  &__menu {
+  }
+}
