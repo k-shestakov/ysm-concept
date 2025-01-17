@@ -109,9 +109,15 @@
       font-size: 0.6rem;
     }
 
+    @include mixins.on-mobile {
+      right: inherit;
+      left: 0;
+      font-size: 0.8rem;
+    }
+
     @media (max-width: 415px) {
       padding: 8px 16px;
-      font-size: 0.5rem;
+      font-size: 0.7rem;
     }
   }
 }
