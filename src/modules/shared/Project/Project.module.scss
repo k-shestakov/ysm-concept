@@ -70,6 +70,12 @@
         transform: translateY(0);
       }
     }
+
+    @include mixins.on-mobile {
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
   }
 
   & img {
@@ -79,6 +85,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.5s ease;
   }
 
   &__description {

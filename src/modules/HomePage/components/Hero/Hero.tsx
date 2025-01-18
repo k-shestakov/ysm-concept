@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
         </Swiper>
 
         <h1 className={styles["hero__title"]}>
-          Професійне проектування будинків
+          Професійний підхід до кожного проекту
         </h1>
       </div>
 
