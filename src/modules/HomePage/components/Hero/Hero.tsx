@@ -36,11 +36,11 @@ export const Hero: React.FC = () => {
         </Swiper>
 
         <h1 className={styles["hero__title"]}>
-          Професійне проектування будинків
+          Створюємо простори, що надихають
         </h1>
       </div>
 
-      <p className={styles["hero__subtitle"]}>Створимо ваш ідеальний дім</p>
+      <p className={styles["hero__subtitle"]}>Будуємо мрії, втілюємо ідеї</p>
 
       <a href="#projects-section" className={styles["hero__button"]}>
         <img src="./images/down.svg" alt="down" />

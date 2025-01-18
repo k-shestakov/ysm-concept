@@ -1,8 +1,19 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
 .overview {
   &__video {
     position: relative;
     overflow: hidden;
     padding-bottom: 35%;
+
+    @include mixins.on-tablet {
+      padding-bottom: 60%;
+    }
+
+    @include mixins.on-mobile {
+      padding-bottom: 70%;
+    }
 
     &::before {
       content: "";

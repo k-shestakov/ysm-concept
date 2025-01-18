@@ -17,7 +17,7 @@ export const Accordion: React.FC<Props> = ({ title, text }) => {
       const paddingBottom = parseInt(computedStyle.padding.split(" ")[1]);
 
       contentRef.current.style.height = `${
-        contentRef.current.scrollHeight + paddingBottom * 1.5
+        contentRef.current.scrollHeight + paddingBottom * 2
       }px`;
     }
 
