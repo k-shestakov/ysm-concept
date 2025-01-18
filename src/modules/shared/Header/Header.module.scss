@@ -37,6 +37,8 @@
   &__logo {
     & img {
       max-width: 151px;
+      height: inherit;
+      display: block;
 
       @media (max-width: 1600px) {
         max-width: 131px;
