@@ -10,7 +10,7 @@ export const Project: React.FC<Props> = ({ index }) => {
     <article className={styles["project"]}>
       <a href="#product">
         <span>Детальніше</span>
-        <img src={`./images/projects/0${index}.jpg`} alt="Project Image" />
+        <img src={`./images/projects/0${index}.jpg`} alt="Project" />
       </a>
 
       <h3 className={styles["project__description"]}>Інтер’єр кухні</h3>

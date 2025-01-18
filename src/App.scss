@@ -62,6 +62,32 @@ body {
   transform: translate(50px);
 }
 
+.send-form__inner {
+  position: relative;
+}
+
+.send-form__error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2px 45px;
+  z-index: 1;
+  font-size: 0.45rem;
+  color: rgb(255, 65, 65);
+  transform: translateY(50%);
+  background-color: vars.$minor-color;
+
+  @include mixins.on-tablet {
+    padding: 2px 25px;
+    font-size: 0.4rem;
+  }
+
+  @include mixins.on-mobile {
+    font-size: 0.35rem;
+    padding: 2px 15px;
+  }
+}
+
 .title {
   @include mixins.title;
 }

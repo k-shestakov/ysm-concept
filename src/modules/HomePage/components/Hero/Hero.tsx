@@ -2,6 +2,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 
+import hero1 from "../../../../images/hero/hero_1.jpg";
+import hero2 from "../../../../images/hero/hero_2.jpg";
+import hero3 from "../../../../images/hero/hero_3.jpg";
+
 import styles from "./Hero.module.scss";
 
 export const Hero: React.FC = () => {
@@ -23,20 +27,20 @@ export const Hero: React.FC = () => {
           className="hero-swiper"
         >
           <SwiperSlide className="hero-slide">
-            <img src="./images/hero/hero_1.jpg" alt="Content Image" />
+            <img src={hero1} alt="Content" />
           </SwiperSlide>
 
           <SwiperSlide className="hero-slide">
-            <img src="./images/hero/hero_2.jpg" alt="Content Image" />
+            <img src={hero2} alt="Content" />
           </SwiperSlide>
 
           <SwiperSlide className="hero-slide">
-            <img src="./images/hero/hero_3.jpg" alt="Content Image" />
+            <img src={hero3} alt="Content" />
           </SwiperSlide>
         </Swiper>
 
         <h1 className={styles["hero__title"]}>
-          Створюємо простори, що надихають
+          Професійне проектування будинків
         </h1>
       </div>
 

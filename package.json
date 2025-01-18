@@ -2,7 +2,6 @@
   "name": "ysm-concept",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://k-shestakov.github.io/ysm-concept/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,6 +13,7 @@
     "classnames": "^2.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
     "react-scripts": "5.0.1",
     "sass": "^1.83.4",
     "swiper": "^11.2.1",
