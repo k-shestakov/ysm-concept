@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
         })}
       >
         <a href="#home" className={styles["header__logo"]}>
-          <img src="./images/logo.svg" alt="YSM concept" />
+          <img src="./images/logo.png" alt="YSM concept" />
         </a>
 
         <div
