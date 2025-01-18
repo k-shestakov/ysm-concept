@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ysm-concept/static/css/main.dd35d80b.css",
+    "main.css": "/ysm-concept/static/css/main.cd17d922.css",
     "main.js": "/ysm-concept/static/js/main.fafe261f.js",
     "static/media/hero_1.jpg": "/ysm-concept/static/media/hero_1.0094460c1a938b8a9444.jpg",
     "static/media/hero_2.jpg": "/ysm-concept/static/media/hero_2.6192c06dd4b663f29106.jpg",
     "static/media/hero_3.jpg": "/ysm-concept/static/media/hero_3.5732ca5ddcc936721f03.jpg",
     "index.html": "/ysm-concept/index.html",
-    "main.dd35d80b.css.map": "/ysm-concept/static/css/main.dd35d80b.css.map",
+    "main.cd17d922.css.map": "/ysm-concept/static/css/main.cd17d922.css.map",
     "main.fafe261f.js.map": "/ysm-concept/static/js/main.fafe261f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd35d80b.css",
+    "static/css/main.cd17d922.css",
     "static/js/main.fafe261f.js"
   ]
 }
