@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fdfe319.css",
-    "main.js": "/static/js/main.bb9f0dae.js",
-    "static/media/hero_1.jpg": "/static/media/hero_1.0094460c1a938b8a9444.jpg",
-    "static/media/hero_2.jpg": "/static/media/hero_2.6192c06dd4b663f29106.jpg",
-    "static/media/hero_3.jpg": "/static/media/hero_3.5732ca5ddcc936721f03.jpg",
-    "index.html": "/index.html",
-    "main.0fdfe319.css.map": "/static/css/main.0fdfe319.css.map",
-    "main.bb9f0dae.js.map": "/static/js/main.bb9f0dae.js.map"
+    "main.css": "/ysm-concept/static/css/main.0fdfe319.css",
+    "main.js": "/ysm-concept/static/js/main.828bebb2.js",
+    "static/media/hero_1.jpg": "/ysm-concept/static/media/hero_1.0094460c1a938b8a9444.jpg",
+    "static/media/hero_2.jpg": "/ysm-concept/static/media/hero_2.6192c06dd4b663f29106.jpg",
+    "static/media/hero_3.jpg": "/ysm-concept/static/media/hero_3.5732ca5ddcc936721f03.jpg",
+    "index.html": "/ysm-concept/index.html",
+    "main.0fdfe319.css.map": "/ysm-concept/static/css/main.0fdfe319.css.map",
+    "main.828bebb2.js.map": "/ysm-concept/static/js/main.828bebb2.js.map"
   },
   "entrypoints": [
     "static/css/main.0fdfe319.css",
-    "static/js/main.bb9f0dae.js"
+    "static/js/main.828bebb2.js"
   ]
 }
