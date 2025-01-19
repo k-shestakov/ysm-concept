@@ -11,6 +11,7 @@
   transform: translateX(-50%) translateY(-50%);
   transition: all 0.6s ease;
   width: 80%;
+  border: 1px solid #ececec;
 
   @include mixins.on-mobile {
     top: 45%;
