@@ -1,5 +1,6 @@
 {
   "name": "ysm-concept",
+  "homepage": "https://k-shestakov.github.io/ysm-concept/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
