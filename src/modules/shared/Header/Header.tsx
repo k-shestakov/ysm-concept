@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import cn from "classnames";
 import styles from "./Header.module.scss";
 import { FormPopup } from "../FormPopup";
@@ -37,6 +38,16 @@ export const Header: React.FC = () => {
     };
   }, [lastScrollY]);
 
+  const handleMenuClick = (
+    e: React.MouseEvent<HTMLUListElement, MouseEvent>
+  ) => {
+    const targetElement = e.target as HTMLElement;
+
+    if (targetElement.getAttribute("class")?.includes("menu__link")) {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <>
       <header
@@ -44,9 +55,9 @@ export const Header: React.FC = () => {
           [styles["header--absolute"]]: !isFixed,
         })}
       >
-        <a href="#home" className={styles["header__logo"]}>
+        <Link to="/" className={styles["header__logo"]}>
           <img src="./images/logo.png" alt="YSM concept" />
-        </a>
+        </Link>
 
         <div
           className={cn(styles["header__menu"], "menu", {
@@ -58,23 +69,23 @@ export const Header: React.FC = () => {
               <img src="./images/close.svg" alt=">" />
             </button>
 
-            <ul className="menu__list">
+            <ul className="menu__list" onClick={handleMenuClick}>
               <li className="menu__item">
-                <a href="#link" className="menu__link">
+                <NavLink to="projects" className="menu__link">
                   ПРОЄКТИ
-                </a>
+                </NavLink>
               </li>
 
               <li className="menu__item">
-                <a href="#link" className="menu__link">
+                <NavLink to="about" className="menu__link">
                   ПРО НАС
-                </a>
+                </NavLink>
               </li>
 
               <li className="menu__item">
-                <a href="#link" className="menu__link">
+                <NavLink to="contacts" className="menu__link">
                   КОНТАКТИ
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>

@@ -27,7 +27,7 @@
 
     @include mixins.on-mobile {
       padding: 14px 15px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       line-height: 120%;
     }
 
@@ -59,7 +59,7 @@
     @include mixins.on-mobile {
       justify-content: flex-start;
       padding: 8px 15px;
-      font-size: 0.6rem;
+      font-size: 0.55rem;
     }
 
     @media (max-width: 350px) {

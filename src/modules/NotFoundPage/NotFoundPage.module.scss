@@ -1,0 +1,33 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  align-items: center;
+
+  &__title {
+    font-weight: 200;
+    text-align: center;
+    padding: 0 15px;
+
+    @include mixins.on-tablet {
+      font-size: 0.8rem;
+    }
+
+    @include mixins.on-mobile {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__back {
+    width: 150px;
+    height: 50px;
+    color: vars.$minor-color;
+    font-weight: 200;
+    font-size: 0.45rem;
+    background-color: vars.$main-color;
+    margin-top: 50px;
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import "./App.scss";
 import { Header } from "./modules/shared/Header";
 import { Footer } from "./modules/shared/Footer";
-import { HomePage } from "./modules/HomePage";
 
 export const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ export const App: React.FC = () => {
       <Header />
 
       <main className="page">
-        <HomePage />
+        <Outlet />
       </main>
 
       <Footer />

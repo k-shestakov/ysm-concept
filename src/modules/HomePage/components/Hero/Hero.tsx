@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 
@@ -9,6 +9,14 @@ import hero3 from "../../../../images/hero/hero_3.jpg";
 import styles from "./Hero.module.scss";
 
 export const Hero: React.FC = () => {
+  const scrollToProjectsSection = () => {
+    const section = document.getElementById("projects-section");
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className={`page__hero ${styles["hero"]}`}>
       <div className={styles["hero__wrapper"]}>
@@ -46,9 +54,12 @@ export const Hero: React.FC = () => {
 
       <p className={styles["hero__subtitle"]}>Будуємо мрії, втілюємо ідеї</p>
 
-      <a href="#projects-section" className={styles["hero__button"]}>
+      <button
+        className={styles["hero__button"]}
+        onClick={scrollToProjectsSection}
+      >
         <img src="./images/down.svg" alt="down" />
-      </a>
+      </button>
     </section>
   );
 };

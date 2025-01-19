@@ -8,7 +8,7 @@ export const HomePage = () => {
   return (
     <>
       <Hero />
-      <ProjectsList />
+      <ProjectsList projects={[1, 2, 3, 4, 5, 6]} />
       <Services />
       <Overview />
       <Form />
