@@ -43,7 +43,9 @@ export const ContactSendForm: React.FC = () => {
         />
 
         {errors?.phoneNumber && (
-          <p className="send-form__error">
+          <p
+            className={`send-form__error ${styles["contact-form-send--error"]}`}
+          >
             {errors?.phoneNumber?.message || "Помилка"}
           </p>
         )}

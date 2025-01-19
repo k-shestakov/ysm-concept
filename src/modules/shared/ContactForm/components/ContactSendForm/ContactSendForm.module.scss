@@ -4,6 +4,15 @@
 .contact-form-send {
   display: flex;
 
+  &--error {
+    @include mixins.on-mobile {
+      position: absolute;
+      bottom: inherit;
+      top: -10px;
+      left: 0;
+    }
+  }
+
   @include mixins.on-mobile {
     display: block;
   }

@@ -44,12 +44,14 @@
     @media (max-width: 1250px) {
       font-size: 0.6rem;
     }
+
     @include mixins.on-tablet {
       font-size: 0.55rem;
     }
 
     @include mixins.on-mobile {
       flex-direction: column;
+      gap: 10px;
       font-size: 0.5rem;
     }
   }

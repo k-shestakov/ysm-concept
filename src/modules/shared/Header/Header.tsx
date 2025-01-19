@@ -4,6 +4,11 @@ import cn from "classnames";
 import styles from "./Header.module.scss";
 import { FormPopup } from "../FormPopup";
 
+const isActive = ({ isActive }: { isActive: boolean }) =>
+  cn("menu__link", {
+    "menu__link--active": isActive,
+  });
+
 export const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
@@ -71,19 +76,19 @@ export const Header: React.FC = () => {
 
             <ul className="menu__list" onClick={handleMenuClick}>
               <li className="menu__item">
-                <NavLink to="projects" className="menu__link">
+                <NavLink to="projects" className={isActive}>
                   ПРОЄКТИ
                 </NavLink>
               </li>
 
               <li className="menu__item">
-                <NavLink to="about" className="menu__link">
+                <NavLink to="about" className={isActive}>
                   ПРО НАС
                 </NavLink>
               </li>
 
               <li className="menu__item">
-                <NavLink to="contacts" className="menu__link">
+                <NavLink to="contacts" className={isActive}>
                   КОНТАКТИ
                 </NavLink>
               </li>

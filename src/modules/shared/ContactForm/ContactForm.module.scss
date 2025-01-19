@@ -6,6 +6,7 @@
 
   &__title {
     margin-bottom: 20px;
+    line-height: 120%;
 
     @include mixins.on-mobile {
       margin-bottom: 0px;
