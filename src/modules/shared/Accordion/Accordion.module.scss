@@ -12,7 +12,7 @@
     background-color: vars.$minor-color;
     position: relative;
     z-index: 2;
-    border-bottom: vars.$main-color 1px solid;
+    border-bottom: #cbcbcb 1px solid;
     color: vars.$main-color;
 
     @media (max-width: 1600px) {
@@ -111,7 +111,7 @@
       padding: 28px 45px;
       overflow: visible;
       opacity: 1;
-      border-bottom: vars.$main-color 1px solid;
+      border-bottom: #cbcbcb 1px solid;
 
       @include mixins.on-tablet {
         padding: 22px 25px;
