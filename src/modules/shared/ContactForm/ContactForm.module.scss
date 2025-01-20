@@ -9,6 +9,7 @@
     line-height: 120%;
 
     @include mixins.on-mobile {
+      font-size: 0.75rem;
       margin-bottom: 0px;
     }
   }
