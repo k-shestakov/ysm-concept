@@ -1,0 +1,51 @@
+@use "/src/styles/utils/vars" as vars;
+@use "/src/styles/utils/mixins" as mixins;
+
+.projects-filter {
+  display: flex;
+  gap: 30px;
+  padding: 30px 45px 15px;
+
+  @include mixins.on-tablet {
+    gap: 25px;
+    padding: 25px 25px 10px;
+  }
+
+  @include mixins.on-mobile {
+    padding: 30px 15px 15px;
+  }
+
+  @media (max-width: 500px) {
+    gap: 18px;
+  }
+
+  @media (max-width: 350px) {
+    gap: 10px;
+  }
+
+  &__type {
+    padding: 10px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #a7a7a7;
+    font-weight: 300;
+    transition: color 0.5s ease;
+
+    &--active {
+      color: vars.$main-color;
+    }
+
+    @include mixins.on-tablet {
+      padding: 8px;
+    }
+
+    @include mixins.on-mobile {
+      padding: 5px;
+      font-size: 0.45rem;
+    }
+
+    &:hover {
+      color: vars.$main-color;
+    }
+  }
+}
