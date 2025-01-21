@@ -10,7 +10,15 @@ export const Team: React.FC = () => {
       <Swiper
         slidesPerView={2.2}
         spaceBetween={15}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        breakpoints={{
+          640: {
+            slidesPerView: 2.2,
+          },
+
+          0: {
+            slidesPerView: 1.2,
+          },
+        }}
         className="team-swiper"
       >
         <SwiperSlide>

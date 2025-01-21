@@ -9,7 +9,8 @@
   }
 
   @include mixins.on-mobile {
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 30px;
   }
 
   &__title {
@@ -19,9 +20,6 @@
   }
 
   &__person {
-    // height: 700px;
-    // overflow: hidden;
-    // min-width: 100%;
   }
 
   &__image {
@@ -30,8 +28,16 @@
     overflow: hidden;
     padding-bottom: 80%;
 
-    @include mixins.on-mobile {
-      padding-bottom: 150%;
+    @media (max-width: 1250px) {
+      padding-bottom: 90%;
+    }
+
+    @include mixins.on-tablet {
+      padding-bottom: 110%;
+    }
+
+    @media (max-width: 440px) {
+      padding-bottom: 140%;
     }
 
     & img {
@@ -61,7 +67,7 @@
 
     @include mixins.on-mobile {
       margin-top: 10px;
-      font-size: 0.35rem;
+      font-size: 0.55rem;
       gap: 5px;
     }
   }
