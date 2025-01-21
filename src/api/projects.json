@@ -1,0 +1,58 @@
+[
+  {
+    "id": 2,
+    "category": "interior",
+    "itemId": "interior-1",
+    "title": "Інтер'єр спальні",
+    "image": "./images/interior/interior-1.jpg"
+  },
+  {
+    "id": 3,
+    "category": "interior",
+    "itemId": "interior-2",
+    "title": "Інтер'єр коридору",
+    "image": "./images/interior/interior-2.jpg"
+  },
+  {
+    "id": 4,
+    "category": "architecture",
+    "itemId": "architecture-2",
+    "title": "Екстер'єр котеджу",
+    "image": "./images/architecture/architecture-2.jpg"
+  },
+  {
+    "id": 1,
+    "category": "architecture",
+    "itemId": "architecture-1",
+    "title": "Екстер'єр будинку",
+    "image": "./images/architecture/architecture-1.jpg"
+  },
+  {
+    "id": 5,
+    "category": "interior",
+    "itemId": "interior-3",
+    "title": "Інтер'єр спальні",
+    "image": "./images/interior/interior-3.jpg"
+  },
+  {
+    "id": 6,
+    "category": "interior",
+    "itemId": "interior-4",
+    "title": "Інтер'єр спальні",
+    "image": "./images/interior/interior-4.jpg"
+  },
+  {
+    "id": 7,
+    "category": "architecture",
+    "itemId": "architecture-3",
+    "title": "Екстер'єр будинку",
+    "image": "./images/architecture/architecture-3.jpg"
+  },
+  {
+    "id": 8,
+    "category": "interior",
+    "itemId": "interior-5",
+    "title": "Інтер'єр спальні",
+    "image": "./images/interior/interior-5.jpg"
+  }
+]

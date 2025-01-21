@@ -1,19 +1,20 @@
 import React from "react";
 import styles from "./Project.module.scss";
+import { Project as ProjectType } from "../../../types/Project";
 
 type Props = {
-  index: number;
+  project: ProjectType;
 };
 
-export const Project: React.FC<Props> = ({ index }) => {
+export const Project: React.FC<Props> = ({ project }) => {
   return (
     <article className={styles["project"]}>
       <a href="#product">
         <span>Детальніше</span>
-        <img src={`./images/projects/0${index}.jpg`} alt="Project" />
+        <img src={project.image} alt="Project" />
       </a>
 
-      <h3 className={styles["project__description"]}>Інтер’єр кухні</h3>
+      <h3 className={styles["project__description"]}>{project.title}</h3>
     </article>
   );
 };
