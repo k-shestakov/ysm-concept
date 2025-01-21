@@ -49,6 +49,7 @@ export const Team: React.FC = () => {
               slidesPerView: 2.2,
             },
             0: {
+              speed: 500,
               slidesPerView: 1.4,
             },
           }}
