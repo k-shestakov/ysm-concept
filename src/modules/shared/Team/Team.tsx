@@ -32,6 +32,7 @@ export const Team: React.FC = () => {
             styles["team__slide-button--prev"],
             {
               [styles["team__slide-button--dis"]]: isBeginning,
+              [styles["team__slide-button--vis"]]: !isBeginning,
             }
           )}
           onClick={() => swiperRef.current.slidePrev()}
@@ -115,6 +116,7 @@ export const Team: React.FC = () => {
             styles["team__slide-button--next"],
             {
               [styles["team__slide-button--dis"]]: isEnd,
+              [styles["team__slide-button--vis"]]: !isEnd,
             }
           )}
           onClick={() => swiperRef.current.slideNext()}

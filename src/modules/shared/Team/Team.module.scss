@@ -16,7 +16,7 @@
   &__swiper {
     position: relative;
 
-    &:hover .team__slide-button {
+    &:hover .team__slide-button--vis {
       visibility: visible;
       opacity: 1;
       transform: translateY(-100%);
@@ -56,7 +56,8 @@
     }
 
     &--dis {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 
