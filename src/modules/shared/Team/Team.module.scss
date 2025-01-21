@@ -37,7 +37,7 @@
     }
 
     @media (max-width: 440px) {
-      padding-bottom: 140%;
+      padding-bottom: 130%;
     }
 
     & img {
@@ -67,7 +67,7 @@
 
     @include mixins.on-mobile {
       margin-top: 10px;
-      font-size: 0.55rem;
+      font-size: 0.45rem;
       gap: 5px;
     }
   }

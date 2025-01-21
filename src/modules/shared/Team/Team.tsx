@@ -16,7 +16,7 @@ export const Team: React.FC = () => {
           },
 
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.4,
           },
         }}
         className="team-swiper"
