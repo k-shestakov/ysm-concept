@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
 
   return (
     <section className={`page__hero ${styles["hero"]}`}>
-      <div className={styles["hero__wrapper"]}>
+      <div className={`${styles["hero__wrapper"]} hero-wrapper`}>
         <Swiper
           modules={[EffectFade, Autoplay]}
           effect="fade"
