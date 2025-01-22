@@ -28,8 +28,6 @@ export const ProjectsPage = () => {
     sortType,
   });
 
-  console.log(preparedProjects);
-
   return (
     <div className={`${styles["projects"]} padding-top`}>
       <ProjectsFilter onSortBy={setSortyType} sortType={sortType} />

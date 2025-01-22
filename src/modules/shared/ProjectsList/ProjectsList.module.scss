@@ -4,4 +4,20 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
+
+  &__item {
+    flex: 0 1 33.333%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40%;
+
+    @include mixins.on-tablet {
+      flex: 0 1 50%;
+    }
+
+    @include mixins.on-mobile {
+      flex: 0 1 100%;
+      padding-bottom: 60%;
+    }
+  }
 }
